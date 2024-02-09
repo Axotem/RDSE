@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDSE</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins%3A600" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A300%2C400%2C500%2C600%2C700" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C500%2C600%2C700" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface%3A400" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abhaya+Libre+Medium%3A500" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates%3A500" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./images/logo_icon.png">
+</head>
+
+<body>
+    <script src="script2.js"></script>
+
+    <section class="gif1">
+        <div class="header">
+
+            <img class="logo" src="./images/logo.png">
+            <div class="nav">
+                <a class="partie_nav" id="partie1" href="#1">Partie 1</a>
+                <a class="partie_nav" href="#2">Partie 2</a>
+                <a class="partie_nav" href="#3">Partie 3</a>
+                <a class="partie_nav" href="#4">Conclusion</a>
+            </div>
+            <div class="bouton_contact">Contact</div>
+        </div>
+
+        <div class="intro">
+            <h1>La route de la sobriété énergétique</h1>
+            <p class="sous-titre">Bienvenue sur la route de la sobriété énergétique. Explorez comment nous façonnons
+                l&#39;avenir de la mobilité.</p>
+            <a class="bouton_intro" href="#1" data-aos="zoom-in">Lire plus</a>
+        </div>
+
+    </section>
+
+    <section class="section1" id="1">
+
+        <article class="graph">
+            <div class="detail_graph1">
+                <h2>Les consommations D’énergies actuelles</h2>
+
+                <div class="texte">
+                    <div class="paragraphe">
+                        <img src="./images/forme1_jaune.png" class="icon">
+                        <p class="paragraphe_texte">
+                            Commençons ce voyage par une exploration approfondie des problématiques énergétiques
+                            actuelles. Notre point de départ est la consommation actuelle d&#39;énergie en France.
+                        </p>
+                    </div>
+
+                    <div class="paragraphe">
+                        <img src="./images/forme2_jaune.png" class="icon">
+                        <p class="paragraphe_texte">
+                            Cette dernière est de <span class="italique">1621 TWh en 2021</span>, et se répartie en 5
+                            grands domaines : <span class="italique">3% pour
+                                l’agriculture/pêche, 16% pour le tertiaire, 19% pour l’industrie, 31% pour les
+                                résidences et 31% pour les transports</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <figure>
+                <img src="./images/graph1.png" data-aos="zoom-in-left" data-aos-offset="200" data-aos-duration="700"
+                    data-aos-delay="100">
+                <figcaption>@Axel HUGOT</figcaption>
+            </figure>
+
+        </article>
+
+        <article class="graph">
+            <figure>
+                <img src="./images/graph2.png" data-aos="fade-right" data-aos-offset="300" data-aos-duration="700"
+                    data-aos-delay="100">
+                <figcaption class="gauche">@Emilie OTT</figcaption>
+            </figure>
+
+            <div class="detail_graph2">
+                <h2>Et pour la suite ?</h2>
+
+                <div class="texte">
+                    <div class="paragraphe">
+
+                        <p class="paragraphe_texte">
+                            En poursuivant, l&#39;ampleur de cette consommation engendre diverses complications sur les
+                            plans Environnemental, Politique et Economique.
+                        </p>
+                    </div>
+
+                    <div class="paragraphe">
+
+                        <p class="paragraphe_texte">
+                            En ce qui concerne les transports, une disparité significative se manifeste, avec <span
+                                class="italique">plus de 92% de la consommation d&#39;énergie liée aux transports
+                                provenant
+                                du secteur routier</span>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+    </section>
+
+
+
+
+    <section class="section2 gif2" id="2">
+        <h3 class="rolling-text">Évolution</h3>
+
+        <article class="graph">
+
+            <div class="detail_graph3">
+                <h4>Consommation énergétique routière</h4>
+                <p class="texte2">Entamons la deuxième partie de notre voyage qui nous amène à explorer l&#39;état
+                    actuel de cette consommation du secteur routier. En effet, <span class="italique">la consommation
+                        des transports est de 540 TWh en 2011 contre 470 TWh en 2021 ; soit une baisse d’environ  12,9 %
+                        en dix ans</span>.
+                    Cette baisse est une avancée significative, mais des possibilités d&#39;amélioration sont encore
+                    possibles.</p>
+            </div>
+
+            <div class="graph_chartjs">
+                <div id="chart-container">
+                    <h5 data-aos="fade-zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1500"
+                        data-aos-delay="200">Consommation énergétique dans les transports (en TWh)</h5>
+                    <canvas id="myChart" style="position: relative; height: 45vh; width: 30vw; margin: auto;"
+                        data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+                        data-aos-delay="200"></canvas>
+                    <figcaption>@Axel HUGOT</figcaption>
+                </div>
+
+                <div class="scrollbar-container">
+                    <div class="scrollbar">
+                        <div class="scrollbar-inner"></div>
+                    </div>
+                </div>
+
+
+                <script>
+                    const ctx = document.getElementById('myChart').getContext('2d');
+                    const data = {
+                        labels: ['2011', '2019', '2020', '2021'],
+                        datasets: [
+                            {
+                                label: 'Ensemble',
+                                data: [540, 521, 439, 470],
+                                backgroundColor: '#F64646',
+                                borderColor: '#F64646',
+                                borderWidth: 2,
+                                borderRadius: 5,
+                                hoverBackgroundColor: '#FF9C9C',
+                                hoverBorderColor: '#F64646'
+                            },
+                            {
+                                label: 'Marchandises',
+                                data: [212, 202, 175, 189],
+                                backgroundColor: '#246069',
+                                borderColor: '#246069',
+                                borderWidth: 2,
+                                borderRadius: 5,
+                                hoverBackgroundColor: '#5AA1AC',
+                                hoverBorderColor: '#246069'
+                            },
+                            {
+                                label: 'Transport collectif',
+                                data: [29, 28, 20, 22],
+                                backgroundColor: '#34C8AF',
+                                borderColor: '#34C8AF',
+                                borderWidth: 2,
+                                borderRadius: 5,
+                                hoverBackgroundColor: '#62DDC8',
+                                hoverBorderColor: '#34C8AF'
+                            },
+                            {
+                                label: 'Transport individuel',
+                                data: [297, 290, 242, 257],
+                                backgroundColor: '#FFE66D',
+                                borderColor: '#FFE66D',
+                                borderWidth: 2,
+                                borderRadius: 5,
+                                hoverBackgroundColor: '#FFF4C1',
+                                hoverBorderColor: '#FFE66D'
+                            }
+                        ]
+                    };
+
+                    const options = {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    stepSize: 100,
+                                    callback: function (value) {
+                                        return value;
+                                    }
+                                }
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'bottom',
+                                align: 'center',
+                                labels: {
+                                    boxWidth: 10,
+                                    padding: 10,
+                                    color: '#333',
+                                    font: {
+                                        size: 12,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(255,255,255,0.8)',
+                                titleColor: '#333',
+                                bodyColor: '#333',
+                                titleFont: {
+                                    size: 16,
+                                    weight: 'bold'
+                                },
+                                bodyFont: {
+                                    size: 14
+                                },
+                                caretPadding: 10,
+                                displayColors: false
+                            },
+                            animation: {
+                                duration: 1500,
+                                easing: 'easeInOutQuint'
+                            }
+                        }
+
+                    };
+
+                    const myChart = new Chart(ctx, {
+                        type: 'bar',
+                        data: data,
+                        options: options
+                    });
+                </script>
+
+            </div>
+
+
+
+        </article>
+
+        <article class="graph">
+            <figure class="figure4">
+                <img src="./images/graphique_carburant.png" class="graphique_essence" data-aos="fade-right"
+                    data-aos-offset="200" data-aos-duration="700" data-aos-delay="100">
+                <figcaption class="center">@Gabriel BEZANNIER</figcaption>
+            </figure>
+            <div class="detail_graph4">
+
+                <h4>Révolution énergétique <br> des transports</h4>
+                <p class="texte2">En effet, pour les années à venir le gouvernement et quelques agences ont envisagé des
+                    étapes pour atteindre la sobriété énergétique sur tout le pays. Comme abordé précédemment, le
+                    secteur routier représente une part importante de la consommation d’énergie du secteur des
+                    transports, il est indispensable que la France s’améliore sur ce sujet. Découvrons quelques
+                    prévisions de l&#39;avancée de la consommation d’énergie dans ce secteur. <span class="italique">La
+                        consommation de diesel et d&#39;essence en 2035 tend à une baisse par rapport à celle de 2020,
+                        marquant ainsi un
+                        changement de préférence vers les véhicules électriques, hybrides et hybrides
+                        rechargeables</span>.</p>
+            </div>
+
+        </article>
+
+        <h3 class="titre3" id="3">Éco-mobilité</h3>
+
+        <div class="transition">
+            <h4>La France vers la sobriété énergétique Routière</h4>
+            <p class="texte2">Nous voici à la dernière destination de notre voyage. Après avoir vu les objectifs futurs,
+                regardons ensemble les mesures actuelles mises en place par la France pour avancer sur le chemin de la
+                sobriété énergétique et, ainsi, réduire la part de la consommation d&#39;énergie relative au secteur
+                routier.</p>
+        </div>
+
+
+
+    </section>
+
+
+
+    <section class="section3">
+        <video width="80%" height="80%" controls>
+            <source src="./images/projet_complet.mp4" type=video/mp4>
+        </video>
+        <figcaption class="gauche">@Lucas CHAULVET</figcaption>
+    </section>
+
+    <section class="section4 gif1">
+        <article class="description">
+            <h4>Vers des Transports Durables avec les Mobilités Douces</h4>
+            <p class="texte2">Premier arrêt : les mobilités douces ou les transports faibles en émission de carbone
+                (prenons exemple sur Rouen au travers de leur projet “Au cœur de la métropole”).</p>
+        </article>
+
+        <article class="graph">
+            <figure class="mobilite">
+                <img src="./images/graphique_mobilite.png" class="graphique_mobilite" data-aos="zoom-in-right"
+                    data-aos-offset="200" data-aos-duration="700" data-aos-delay="100">
+                <figcaption class="gauche">@Lucas CHAULVET</figcaption>
+            </figure>
+            <div class="detail_graph5" data-aos="slide-up" data-aos-duration="700">
+                <h4>Le Plan National en Trois Mesures</h4>
+                <p class="texte3">Deuxième arrêt : Le plan national pour le covoiturage du quotidien. <span
+                        class="italique">L&#39;aide au covoiturage atteint 150 millions d’euros répartis entre 2023 et
+                        2027,
+                        au travers de trois mesures principales.</span> Deux aides sont distribuées aux collectivités
+                    pour
+                    mettre en place des dispositifs et/ou les poursuivre.<span class="italique"> La troisième est une
+                        prime
+                        de 100€ pour les conducteurs se lançant dans le covoiturage.</span></p>
+            </div>
+        </article>
+    </section>
+
+    <section class="section1">
+        <article class="graphiques">
+            <h2>OBJECTIFS FUTURS</h2>
+            <p class="texte4">Le troisième et dernier arrêt correspond aux mesures mises en place par l’Etat impactant
+                directement les particuliers et les entreprises. On y retrouve des conseils …</p>
+
+            <div class="objectifs">
+                <div class="rectangle_blanc">
+                    <img src="./images/kilometres.png" class="img1">
+                    <p class="donnees">- La conduite modérée épargnant jusqu&#39;à 45% en ville sur le premier km, 25%
+                        sur le second.</p>
+                </div>
+
+                <div class="rectangle_blanc">
+                    <img src="./images/Iimitation.png" class="img2">
+                    <p class="donnees">- La limitation du régime moteur permettant une économie jusqu&#39;à 20% de
+                        carburant.</p>
+                </div>
+
+                <div class="rectangle_blanc img_3">
+                    <img src="./images/clim.png" class="img3">
+                    <p class="donnees">- La minimisation de la climatisation offrant une baisse de 1 à 7% de carburant.
+                    </p>
+                </div>
+
+                <div class="rectangle_blanc">
+                    <img src="./images/panneau_limite.png" class="img4">
+                    <p class="donnees">- La circulation à 110 au lieu de 130 km/h afin de diminuer de 20% le carburant.
+                    </p>
+                </div>
+            </div>
+
+        </article>
+
+        <article class="graphiques2">
+            <p class="texte4">Et des obligations pour vos employeurs :</p>
+
+            <div class="objectifs2">
+                <div class="rectangle_blanc">
+                    <img src="./images/illustration_argent.png" class="img5">
+                    <p class="donnees">- Forfait Mobilités Durables éligible pour touts les salariés jusqu&#39;à
+                        800€/an,qui utilise le vélo ou le covoiturage.</p>
+                </div>
+
+                <div class="rectangle_blanc">
+                    <img src="./images/illustration_reduc.png" class="img6">
+                    <p class="donnees">- Remboursement des frais d’abonnement aux transports publics des salariés à
+                        hauteur de 50%.</p>
+                </div>
+            </div>
+            <figcaption class="center">@Clément MATHIEU</figcaption>
+        </article>
+    </section>
+
+    <section class="section5 gif3" id="4">
+        <div class="transition2">
+            <h4>Pour Conclure</h4>
+            <p class="texte2">Et voilà, notre périple touche à sa fin, mais le voyage ne s&#39;arrête pas là ! La Route
+                de la Sobriété Énergétique englobe bien d’autres sujets, en plus des transports, où nous devrons aussi
+                consacrer nos efforts. Merci de nous avoir accompagné tout au long de ce parcours. Engageons nous,
+                contribuons à un changement durable et façonnons un avenir énergétique plus sobre et résilient !</p>
+        </div>
+    </section>
+
+    <div class="footer">
+
+        <img class="logo2" src="./images/logo.png" />
+        <a class="partie_nav animate__animated animate__bounce animate__infinite animate__slow" href="#1">PARTIE 1</a>
+        <a class="partie_nav animate__animated animate__bounce animate__infinite animate__slow" href="#2">PARTIE 2</a>
+        <a class="partie_nav animate__animated animate__bounce animate__infinite animate__slow" href="#3">PARTIE 3</a>
+        <a class="partie_nav" id="conclusion" href="#4">CONCLUSION</a>
+    </div>
+
+
+
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
